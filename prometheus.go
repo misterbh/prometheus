@@ -1,4 +1,4 @@
-package motd
+package prometheus
 
 import (
 	"encoding/json"
