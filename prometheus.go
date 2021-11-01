@@ -26,14 +26,14 @@ type prometheusData struct {
 	Style         string            `json:"style"`
 }
 
-// @id MOTD
-// @summary fetches the message of the day
+// @id PROMETHEUS
+// @summary fetches the data to be used by PROMETHEUS
 // @description **Access policy**: restricted
-// @tags motd
+// @tags prometheus
 // @security jwt
 // @produce json
-// @success 200 {object} motdResponse
-// @router /motd [get]
+// @success 200 {object} JSONResponse
+// @router /prometheus [get]
 func (handler *Handler) prometheus(w http.ResponseWriter, r *http.Request) {
 	prometheus, err := client.Get(portainer.MessageOfTheDayURL, 0)
 	if err != nil {
