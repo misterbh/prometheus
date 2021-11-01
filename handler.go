@@ -7,7 +7,7 @@ import (
 	"github.com/portainer/portainer/api/http/security"
 )
 
-// Handler is the HTTP handler used to handle MOTD operations.
+// Handler is the HTTP handler used to handle PROMETHEUS operations.
 type Handler struct {
 	*mux.Router
 }
